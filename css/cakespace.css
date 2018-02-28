@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Open+Sans|Quicksand|Satisfy');
+
+/* Main body and text */
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    overflow-x: hidden;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
+}
+h1 {
+    font-size: 3.7em;
+    text-align: center;
+    letter-spacing: 0.3em;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Courgette', cursive;
+}
+h2 {
+    font-size: 2.6em;
+    line-height: 1.5em;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Courgette', cursive;
+}
+h3 {
+    font-size: 1.3em;
+    text-align: center;
+    letter-spacing: 0.13em;
+    color: rgba(255, 255, 255, 1);
+}
+h4 {
+    font-size: 1.3em;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 0.8);
+}
+h5 {
+    font-size: 1.4em;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Courgette', cursive;
+}
+h6 {
+    margin-top: 0px;
+    font-size: 1.4em;
+    text-align: left;
+    margin-bottom: 5px;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Courgette', cursive;
+}
+p {
+    margin-top: 0;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}
+b {
+    font-size: 0.9em;
+    font-weight: 600;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Open+Sans', sans-serif;
+}
+
+a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Top bar navigation menu */
+nav ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align:center;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+nav li {
+    display: inline-block;
+    padding: 10px 0;
+}
+nav li a {
+    color: white;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 12px 24px;
+    text-decoration: none;
+}
+nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Header and banner */
+header section.imgContainer {
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    overflow:hidden;
+    position: absolute;
+}
+header section img {
+    width: 100%;
+    opacity: 0.7;
+    height: 400px;
+    object-fit: cover;
+}
+header section.textContainer {
+    line-height: 10px;
+    transform: translateY(130%)
+}
+section.pageHeadline {
+    position: static;
+    line-height: 10px;
+    padding-top: 300px;
+    padding-bottom: 4%;
+}
+img.line {
+    width: 50%;
+    top: 0;
+    opacity: 0.6;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Recipe grids */
+section article.imgContainer {
+    overflow: hidden;
+}
+section.recipeGrid img {
+    width: 85%;
+    opacity: 0.8;
+    margin: auto;
+    height: 220px;
+    display: block;
+    object-fit: cover;
+}
+section.recipeGrid img:hover {
+    opacity: 1;
+}
+
+/* Recipe instructions */
+button.favoriteHeartFullPage {
+    z-index: 1;
+    float: left;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    margin-top: 16px;
+    margin-left: 52px;
+    position: absolute;
+    background: url("../img/heart.png") no-repeat;
+    background-size: 40px 40px;
+}
+button.favoriteHeartGrid {
+    z-index: 4;
+    float: left;
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    margin-top: 6px;
+    margin-left: 36px;
+    position: absolute;
+    background: url("../img/heart.png") no-repeat;
+    background-size: 30px 30px;
+}
+img.recipeImg {
+    width: 85%;
+    opacity: 0.8;
+    margin: 10px auto;
+    height: 480px;
+    display: block;
+    object-fit: cover;
+}
+ol {
+    margin: 0;
+    color: rgba(0, 0, 0, 1);
+    list-style-type: decimal;
+    font-family: 'Courgette', cursive;
+}
+
+ol li {
+    margin-top: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.comments h6 {
+    margin-top: 80px;
+    margin-bottom: 34px;
+    padding: 17px 80% 5px 10px;
+    border-bottom: 1.2px solid rgba(0, 0, 0, 0.5);
+}
+.comments p {
+    margin-top: 3px;
+    margin-bottom: 25px;
+
+}
+
+.comments input[type=text] {
+    width: 30%;
+    margin: 8px 0;
+    outline: none;
+    font-size: 1em;
+    display: inline;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+.comments input.commentField {
+    width: 100%;
+    resize: none;
+    height: 150px;
+    box-sizing: border-box;
+}
+.comments [type=button], input[type=submit] {
+    border: none;
+    color: white;
+    outline: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 0.8em;
+    padding: 16px 32px;
+    background-color: rgba(255, 202, 178, 1);
+}
+input:required:invalid, input:focus:invalid {
+    -moz-box-shadow: none;
+}
+
+
+/* Footer */
+footer {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    margin-top: 100px;
+    background-color: rgba(255, 202, 178, 1);;
+}
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Media queries */
+/* Mobile */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 3.5em;
+    }
+    nav li {
+        padding: 5px 0;
+    }
+    nav li a {
+        padding: 5px 24px;
+    }
+    header section img {
+        width: 240%;
+        height: 170px;
+    }
+    header section.textContainer {
+        line-height: 10px;
+        transform: translateY(0%)
+    }
+    section.pageHeadline {
+        line-height: 40px;
+        padding-top: 70px;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h4 {
+        font-size: 1.1em;
+    }
+    section.recipeGrid img {
+        width: 90%;
+        height: 240px;
+    }
+    img.line {
+        width: 85%;
+    }
+    button.favoriteHeartGrid {
+        margin-top: -13px;
+        margin-left: 0px;
+        width: 50px;
+        height: 50px;
+        background-size: 50px 50px;
+    }
+    button.favoriteHeartFullPage {
+        margin-top: -6px;
+        margin-left: 9px;
+        width: 50px;
+        height: 50px;
+        background-size: 50px 50px;
+    }
+    .comments input[type=text] {
+        width: 100%;
+    }
+}
+/* Tablet */
+@media (min-width: 401px) and (max-width: 1024px) {
+    h1 {
+        font-size: 3.5em;
+    }
+    header section img {
+        width: 120%;
+        height: 250px;
+    }
+    header section.textContainer {
+        line-height: 10px;
+        transform: translateY(50%)
+    }
+    section.pageHeadline {
+        line-height: 40px;
+        padding-top: 150px;
+    }
+    section.recipeGrid img {
+        width: 90%;
+        height: 240px;
+    }
+    img.line {
+        width: 70%;
+    }
+    .comments input[type=text] {
+        width: 100%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
